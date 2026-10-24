@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>El Almanaque de Maomao · Cumpleaños</title>
+  <meta name="description" content="Landing estática de cumpleaños con temática de Los Diarios de la Boticaria (Maomao). Datos desde JSON, sin base de datos." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>
+  <div class="paper-grain" aria-hidden="true"></div>
+
+  <header class="hero">
+    <div class="hero-ornament" aria-hidden="true">
+      <svg width="80" height="80" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+        <path d="M26 8h12v6h-12z" fill="currentColor" opacity=".9"/>
+        <path d="M28 14h8v6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+        <path d="M24 20h16l-2 8v18a6 6 0 0 1-6 6 6 6 0 0 1-6-6V28z" stroke="currentColor" stroke-width="2.5" fill="currentColor" fill-opacity=".08"/>
+        <line x1="24" y1="36" x2="40" y2="36" stroke="currentColor" stroke-width="2.5"/>
+        <circle cx="32" cy="46" r="3" fill="currentColor" opacity=".5"/>
+      </svg>
+    </div>
+    <p class="hero-kicker">Los Diarios de la Boticaria</p>
+    <h1 class="hero-title">El Almanaque de <span class="accent">Maomao</span></h1>
+    <p class="hero-sub" id="hero-sub">Los cumpleaños de las personas importantes, observados con la paciencia de una apotecaria.</p>
+    <div class="hero-herbs" aria-hidden="true">🌿&nbsp;&nbsp;✦&nbsp;&nbsp;🌼&nbsp;&nbsp;✦&nbsp;&nbsp;🌿</div>
+  </header>
+
+  <main class="container">
+    <section id="next-banner" class="next-banner" hidden>
+      <span class="next-label">Próximo cumpleaños</span>
+      <span id="next-text" class="next-text"></span>
+    </section>
+
+    <section id="today-banner" class="today-banner" hidden>
+      <span class="today-emoji">🎂</span>
+      <span id="today-text" class="today-text"></span>
+    </section>
+
+    <ul id="grid" class="grid" aria-live="polite"></ul>
+    <p id="empty" class="empty" hidden>Aún no hay personas registradas. Edita <code>data/birthdays.json</code>.</p>
+    <p id="error" class="error" hidden>No se pudo cargar <code>data/birthdays.json</code>. Abre esta página desde un servidor local (ver <code>README.md</code>).</p>
+  </main>
+
+  <footer class="footer">
+    <p>Preparado con hierbas y paciencia · Temática Maomao · Versión estática 1.0</p>
+  </footer>
+
+  <script type="module" src="./js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+{
+  "name": "maomao-cumpleanos",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Landing estática de cumpleaños con temática de Los Diarios de la Boticaria (Maomao). Datos desde JSON, sin base de datos.",
+  "scripts": {
+    "start": "npx --yes serve -s .",
+    "serve:py": "python -m http.server 8080"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "titulo": "El Almanaque de Maomao · Cumpleaños",
+  "subtitulo": "Los cumpleaños de las personas importantes, observados con la paciencia de una apotecaria.",
+  "personas": [
+    { "nombre": "Yuno", "relacion": "Sobrino", "fecha": "2006-10-22", "nota": "Le gusta el real madrid, Frieren, su color favorito es el cafe." },
+    { "nombre": "Lucía", "relacion": "Hermana", "fecha": "1995-10-25" },
+    { "nombre": "María", "relacion": "Madre", "fecha": "1990-11-05", "nota": "La primera boticaria." },
+    { "nombre": "Abuela Rosa", "relacion": "Abuela", "fecha": "1945-12-25" },
+    { "nombre": "Carlos", "relacion": "Padre", "fecha": "1988-03-15" },
+    { "nombre": "Javier", "relacion": "Mejor amigo", "fecha": "1992-07-20" }
+  ]
+}
